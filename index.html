@@ -5,832 +5,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="icon" href="./images/nexon.png" />
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDxAPDw8PDxAODw8OEA8PDw8QEA8PFREWFhURFRUYHSggGBolGxUVITEiJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGi0lICYtLS0tLS0tLS0tLTAtLS0tLS0tLS0tLSstLS0rLS0tLS0tLS0tLS0tLS0tLS0rLS0tK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIFAwQGBwj/xABCEAACAQICBwQGCAQEBwAAAAAAAQIDEQQhBQYSMUFRYRNxgaEiMkKRscEHUmKCktHh8BQjM3JDU7LCFTREc6LS8f/EABsBAAIDAQEBAAAAAAAAAAAAAAAEAQMFAgYH/8QANxEAAQMCAgYIBQQDAQEAAAAAAQACAwQRITEFEkFRYXETMoGRobHB0QYUIlLwIzNC4TRykmIW/9oADAMBAAIRAxEAPwD2tsi2Nsg2ShDZFsGyLYKENkWxtkGybIQ2RbBsQIUQGIEJAMQKEgGIEJAMQISAYgQkIYAhIQwBCSRa4ajsR6vN/ka+Bo+2/u/mbxBUhAhAQpTEAgQpCAAQsTZFsGyLZKhDZFsGxNghDZBsbZElCaABAhAiQgQogMr9NaWpYOk61V5bowXrVJ8IxX7sBIGJQASbBb05KKbbSSzbbSSXVlXPWTAp2eLoX6VFJe9ZHlundP18bNurK0E/Qoxb7OC4Ze0+r8txUMVdU44BONpMPqPcvd8NiadWKnSqQqQe6VOUZx96Mp4VgcdVw8+0oVJU5c4vJ9JLdJdGejar67QxDjRxOzSrOyjNZUqr5Z+rLpufDkdxzh2BwKrkp3NxGIXXANiL0skIkIEJGbD0dt9Fv/Ixxi27LeyzpU1FWXj1YFSFJAAHKlAhkQQmIZEEJgFwBCwNkWxtkWyVCGyLYNkWyUKLZkSIwXEmCEhDAEJAAgQtfH4ynQpTrVZbMKa2pP4Jc23ZJdTxzWDTNTG1nVnlFXjSp3ypw5d73t/oXOvusH8TW/h6b/kUJNNrdUqrJy6pZpeL5HKJCM0msbDJaFPFqjWOZRYTRMiypMqDItEmIhC7nUzXJw2cNi5XhlGlXk84co1Hy+1w4816IeAM73ULWqzjg8RLJ2jQqSe58KUny5Pw5DUM1vpd2JOeD+Te1egiJM2cLR9p+H5jSSU8NR2Vd735LkbBECEJgRAFKYEQBCYEQBCYCAFCwtkGxtkGyUIbElci2ZYRsCE7AaOltL0MJDbxFRQTvsrNzm1wjFZs4rSf0kSzWFw6S4Trtt/gi/8AccOka3NWMic/IL0IDx7E66aQm/8AmNhcqdOlFLxs35mjU1hxst+MxPhVmvgyr5lu5XfKu3he3WOe110tLD4fs6O08RiW6VKME3NK3pzSWeSaXfJHG6vYLSOKtUli8VRo/XdartT/ALFfPveXed1h8OoJZznKMdntKs3Oq1e+c3nv4bjIr9PQwXYwaz92wcz6DtsumUpDgScFwGjdSsRUSdVwoR5P06n4VkveX+G1KwsPXdWq/tTUV7o2fmdMxHlJdLVUn8tUbm4ePW8U8qiGruDjuw9P7ylL4tjlq9g3/wBNS8ItfAtAFfmp736R3/TvdTZUFbVDBS3U5w6wq1Pm2irxeocH/Rrzj0qJSXvVjsgL49JVTMpD24+d1NgvLdIaq4ujd9n2sV7VB9p/45S8ikkt6eVsmnvR7Wyt0poXD4lfzaacuFWPo1V97j3O6NSn067KZtxvHsc+8ckau5H0eae/jKfY1pXr0IptvfWpblPq1kn4PidueOz0JitG14YvDN140pbTSVqmx7UJRW9NXV132Vj1nR2NhiKNOvSd6dWEZxfRrc+TW59Ueso6uOpj1mOv+bRnfmsyoi1HX2FbIBcQ4lkAK4rghMBCuCE7hcVxXBCdwFcAQtdsxyn3eZr1Krl0XLiYZI8tU/EwDrQR3G8m1+QGPeb8AnGUl+sVZUknnv8AGwYrERpU51Zu0KcJVJPlGKu/gVEnbNZPmV+tONlLR+Jhm5OEbNcY7cdpv7txmh+II53akjdVxyxuCd2yx3Zg774EfRkYtNwvNtMaTqYuvOvVecn6Mb5U4ezBd3m7s0rBEmP55pvLALG0djqpqnt7OIxUfRylTov2uUprl048eRi1N0Cq0v4irG9KD9CL3VKi4v7K833M9AR53S+kywmCE4/yO7gOO87Mhje0gISGCHY8yG3UqLEzJTpynlGO14fMz/8ADqv1V+JDcVDUSi8cbiOANlBe1uZWmxGxUwdSO+Hjv+BrsplgkiNntLTxBHmumuBySACJUu0MQxAugos2dF4iNG8NlKEpOXoq1pSd27dXn3ts1xMapKqWmk6SI2PgRuPD8C5fG141XLpVK+a3PNMLlPo3GbD2Jeq3k/q/oW59CoK5lZF0jcDkRuPtu9DcDHmiMbrFFwuILjqqRcLiGgQlccY3JRhzJAhLYXUB3AEKkuY5sHIxSZ8qvgtsBKbMMycmY5HKubgvNtYtG/w2IlGKtTn6dPpF74+D8rGHRGBlia0KMctp3lL6sF60v3xaOu1zwXaYftEvSoPtF/23lJfB/dI6mYDsqXayXp17Nc1R9leO/wBx6pmkyKHpb/WPp7d/dieOCpMf1WXU4SjGnCMILZhCKjFLgkbCMVJGZHkziUOwUzawWC2/SndR4Lc3+hhwtHtJqPBZy/fUvj0+g9Ftl/WlF2jADedpO8DxOeVknPMW/S3NQjBJWSSS3LgZAA9ikUGpisFCpvVpfW/e82wK5YWTMLJBcbipa4tNwuZxOHlTezLwfTmYGdJjMOqkGuPsvkznJKx4HS2jvk5Rq9V2XqOzDHcd4K1IJukGOaiDExX4LN8jKTNkxM2I6PrSzVO3e1HyYp4CtHN0/hL4DfyNSBfon2/0d7LjpWfcO9arLrRuJ247L9aO/quBSsy4atsTUuW/qMaKrvlagPPVODuW/sOPeNq4ni6RltuxdAIlGN8+BNKx9FWMoqHMmhXFcEJ3FcVxXBClcCFwBComzHJkmQZ8nC3gFCRBk5EGdKwLFWgpJxkrqScWuaas0QwVN7T3ZOyS3JLckZZGfB0rZ88zrWsLLpxsFswRlRGKJnLAlCrHQ8PRc/rv4ftlkami/wCjDx/1Mx6ax6w2HrYiSuqVOUkvrS9mPi7LxPpGjmBlJEP/ACD3i58SsuW5kPNaesGs+FwKXbTbnJXjRpraqSXO3BdXY5aP0q4fatLC11C/rKVOUrf23XxPN9IYupXqTrVZOdSpJylJ8X05JbkuCRozZY6Y7E02mbbHFfRGhdNYfG0+1w1RVI3tJbpQl9WUXmmWR8+anablgcbSqp2pzlGlXjfKVKTs2+sb7S7urPoMtjfrBLTRdGcMkHN6Ths1Z9fyudIUGmv6j7l8jE+I2g0gO5w8iFbRn9TsWhTpuclGKu27L8zosHgo0llm+Mnx7uSNXQeHtF1HvlkuiX5/ItTnQejmxRCd/XdiOA2W4nMns336qpi52oMh4oEMR6BJrUxmChVWas+El8+aOcrUnCTjJWaZ1pU6eoXiqi3wyfc93n8Tz+ndHMliNQ0fU3E8RtvxAxvwtuTdLMWuDDkVk0ZV2qS5r0fdu8jauVOhp5zjzt5ZfNFnc0dFTmajjec7WPYbeipqG6shH5incVxNkWzRVKk2JsTZFsmyFO4GPaECFUTyy/dzEyw0pRtLbW6W/vNBnzCtpnU07onbDhxBxB7vHBbkT9docoSMbMjIKN3YXV4RSp7T6G9CNiNKFkZUiM1Q9900hsQ2WtVastD1Lw2eMH8cyq+kWEpaMxGzw7KT/tVWDfkZcJX7OalwfrIucTQhWpzpzSlTqwlCS4SjJWfkz3Ghaps9KI7/AFNFjy2Huw5gpGZupJrbM186TZrTZe606AraPrOFRN0232Va3o1I8M+Eua+VmUE2NuwNinmkEXCSpub2Iq8ptQilxk8kvez6cgrJLfZJXPIPo11RqVq1PG14OFCjJVKKmrOtVXqySfsxed+LStxPYi+BpAJO1JVTwXADYg5rSb26skuaiu/JfEvsTVVOLk+COfwj2q0L8Z/O5g/EEjZDDS/c4E8j9I8z3LqkbbWfuCnrZrLR0Vh4zmnOUv5dCjF2lUklvb4RWV314tpHkuM+k3SlSe1CtCjG+VOnRpONuTc02/eY/pS0jKvpSvFu8MOoYemr5K0VKbtzc5S9y5HJmtNKdazcAFdBC0NBcLkr2fUH6RXjaiwmLjCFeSfZVYejTrNK7g4t+jO2a4Oz3ZJ+inytQrypyjUpvZnSlGpCXKcXeL96R9R4KuqtKnUW6pThUXdKKfzL4JC8YpepiDCC3aspgxsdqnNfZk/FK6M7MWIdozfKEn5MskALSDuKWabEFUGiZfzH1RbNlLox/wAz8XwLdyMb4bN6Lk4+QPqma0fq9nuptkXIg5CbN9KKTkQbI3FcEKVwI3AFC269JTi4vj5cjn6kWm096eZ0hW6Ww/8AiL73yPOfEFD0sXTt6zM+Lf6z5aydo5dV2odvn/aqpGejTt3sx0o3d+Rso8SStJ7tiaJEUM6aqkxkRlihRaNjCYyVPL1ofA4/TOtbw2IlR7PaUNm73N3s8veb2jNZMNiLRU+zm/YnaLb6cH4DsbKqmtOwEcRjgd+eB4iyufSyal3NwOP5Zdo3SxEHCShUjJZwnFNeMWaVDVfAU5bcMFhYyTupKjTyfNZZFf18zNDG1Vum/FJ/E2oPiRlv148d7bHwNrd5We6lI6rl0ZgrYiEF6T8Cjljar3z8rfA15SuTUfEotaGM33u2dgJv3hDaM/yPctjHYx1XyityNbD1NmcJcIyTfvzIsgzzL6mV0vTON3Xvjwy7OCeaxoGqMl5L9IuEdHSuMTTtUqKtF/WjUipXXS7a8DnD2rW/VZaVownSlGGMw0dlOWUatO91CT4Z7nwbfM8wq6naSjPs3gMTtbvRpuUPxxvHzPchwmaJY8WuxHtzGRVTHgDVcbEYKno0JVZxpU1tTqyjTguc5PZive0fUeDoKlTp01upwhTXdGKXyPOvo6+j6eFqRxmN2e2in2NBNSVJtWdSclk5WySWSu3du1vSh6CMtGO1J1UoeQBsQamlKmzRm/BeORtlFpzE3kqa9n1u/h5fEX0nUiCle7aRYczgPfkCq4Ga8gC09H/1PeWbZUYbEQpvam7K1tzd3bcRr6alLKmtlfXe/wB25GToetp6WhHSOxJJsMTs2dmZsE1UQSSy/SNmezarlsh2i5r3opYbUs5NyffcyqJxL8T2P0RYcXWPgPUoFBvd4f36K2EV9OrKO5+H6lhQrKavua3rkaujtMQ1h1Lartx28jt8EtNTujxzCQGQDWSy3GzSxWLVnGOd73ZDGV9puK9W3v7jUZ5DS2nXBxhp8BkXbTvt77dm8vw046zu5KCsiREZ5NOlO4CuB0CosmFxXA7uiy5bXbQrqxWIpK86cbTit8qcc1JdVn4dxx1PQmKlHbjQqOO++w1l3M9aM+HrRinGSy4Pl3noNE10Y/RlNvtPoTs4HLZuTbK6WKMNaAbc8uxeU6M1lxWGexJupGLs4Vdp26J70dbozW3DVrKT7Kb/AM22zfpLd77HO/SFRhHEQlFJOpD0rcbPJ+fkcuPVWjIJHG4sd4w7xke6/FPNiiqYxJaxO7uXs8aiaummnuad0B5HgdKV6D/lVakV9Xaew/uvI6PA67yVlXpKX2qfov8AC/zMWbQ8zMWWcO49xw8b8Es+hkb1cfP87V3DIsqMJrPhKv8AiqD5VvQ83l5lpTrRkrxkpLnFpozZI3xmz2kcxZLFjmdYWWalUlCSlF2aLzB6RhUyb2Zcnx7mc/cGPUGlJqMnVxacwfMbj+WytRLA2TPNdbcZytPEzjunNdzCpipyyc5tcm8je/8ApYbftuvzFu/PwSnyLvuCudIaSjBOMGpT99v1Ofk75vNvNvqMR56u0hLWPDn4AZAZD3PHwTkULYxYLU0h6q7zFhYZmTG7l3hhhdvVTOxb1NEzFGRPaOHG6rKbZPC1NmafB7/EwthEmKZ0LxI3NpBHYfVcuaHDVO1XYEgPrfRDcvPXVfiYuE3F+HXqYtousVhFVVnk1uly/Qo69GdOWzJb9zXHqmfN9LaKfSyF7RdhOB3X2H0OR5rYp5WyC21TuBHdkFzEV6kO5G4yUJgICboTFcVxXJQq3S+g6GLS7WHpxVo1INKpFcuq6M5XHalzhd02qkeSvGp7uPgd3cVx6m0jPT4NNxuOI9COw24K5kr2ZLyuvoiUHZqSfKSafmalTBzXC563WpRmrTjGS5TSZWYnQFCe7bpvo1b3M2IdNQu/caW8sR7+BTjKzffz/teYyi1vVh06soO8JSi+cW4vyO2xeq0/ZlTn3txf5FJi9XK0btUqn3YuS8rmhHVU8gsyQHhe3gfZMsqmnNadHT+Lh6ter957f+pM3qWt2KX+XL+6n/6tFLLCzU1Taak5KKTTWbdkekaB0FShBR2U3bOTSu3zZa3R0UpxjH/PqPdU1c8MLQSwOJ5D0XMw10xHGlRfdGov9xsYfXOba26MbcXBu68Gb2t+q0bKphortLpSpxstpP2kuDRp6G1Sd1PEtWWfZRd7/wBz4dy95nVdLQ01xI0X3Am/YL4czguY5KR8eva3Db+ccvJdZRqbcYyW6STXiTBK2QHlkgtTFrd3ipEsVuXeQgWjJd7FsxkPaMKZJM5suVlTNvA0tqV+Ed/yMGGoSqPLct75FzRpKCUVuXn1N3Qui3TSiZ4+hpv/ALEbuA27NmeSVVOGDVGfkpDEB7i5WWrJxst9ksynxmJ7SWXqrd1NzSlayUF7W8qzxun9Iuc/5VhwHW4nO3IZnu2J6miFtY9ihUhddTAmbEma9Xmebc0WTzNyltBcxqQ7lVl3ZTuFyFwJCLKVxXEBNlNk7iuRuJsEWUmxNiuK5KlO4XIAFlCbz35j/e5ABI+nLBCAACAAMkIIkiDZKFgxL3d5CLLCnoydW0rqMc83d+Ru0dEU4+s3PvdvJGxS6Gq52hwbYHEEm1+658FS+qjZgTjw/LKnpxcnaKu+VrllhdGPfUyX1ePi+BaU6UYq0Y7K7rDN+k+H4YzrTHXO7Jvue3A7QkZa1zsGYeajCCirJWS4IZIib4AGASaAHYAQtbSMr1ZdLfA1nI2dLRtNS4S+X7RouR800kxzK2UO+4nsOI8CFrw4sB4JykYZslKRhnITumGhR2rE1IwTYlUsdWurFsXC5jUh3IsoU7juY7hcFCncLkbhcEJ3FcVwuCExCuFwQmO5G4XBClcLkbiuCFJsy4Sg6s1Bcd75GurtpLNt2SW9vkdNovBdjHP15es+X2Uami9Huq5rHqjFx9OZ8BdL1E3Rt47PdbkaEEkklZJW7kKWHXBteZkuFz6ABbBY615Yd8LPyMMoNb0zduFwQtAZuSpp8EYpYdcH7zq6ha4GX+HfNeYBdCeKoKpFxeXFPkUFaMoNxkrNHSGHFYWNRWkt25rgYmltEisAew2eO4jcfQ7OWTVPUdHgclzcpGOTLHEaIqL1fT8beTNZaNrP/Da8YpfE8i7RtWx2qYnX4C47xceK0xNGRfWC0pMz4HATrvLKK9ab3LoubLTC6E41ZX+wr+ZbwgopJJJLJJKyRtaP0C9x16nAfbfE87ZDtvyS81aBhHid+z+/Lmq+ehqWylG8Wlbave/Vr/4VuI0XVhmltrmvy3nRgbNToakn/jqne3DwyPck46uVm2/P8uuO2uG5rhxJXOqr4aFT14KXVrP37yur6Ci/Uls9H6X6mBUfDtQzGJwcO4+OHinGVsZ62Hiqa4XNqvomvH1Yqa+x+TNKpGUPWjKPfFoyJqOeH9xhHEjDvy8U0x7H9UgqdwuYO0Hti9lZZZLhcxbYtsmyhZ7kdowuoLtCdVQs20OCcmoxTbeSSMmjcG68tm+ykrt2u7brI6bB4KFFWgs3vk85PvZr6P0PJVDXJszftNs7D1Pjklp6lseG1YNGaOVL052dR+6PRdepYXEB7SCCOBgjjFgPy54rKe9zzrOTuFxAXLhO47kQBClcVxACE7gIAQgAAEIAAIQgAAlCAAAQgAAEIFU9V9wAWRbVDlx2kf6jNVAB84rf8h/Nehi6g5IEACqsUZGaluACHKArrVz+pL+x/GJ0AAe20D/gt5u8yses/d7AkAAbCUQAACEAAAhAAAIQAACF/9k="
+    />
     <link
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css"
       rel="stylesheet"
     />
-    <title>넥슨</title>
+    <title>넷마블 | 메인</title>
   </head>
   <body>
-    <header>
-      <div class="header__menu">
-        <i class="fas fa-bars"></i>
-        메뉴
-      </div>
-      <a href="/">
-        <img src="./images/nexon-removebg-preview.png" />
-      </a>
-      <div class="header__more">
-        <i class="fas fa-credit-card"></i>
-        <span>넥슨현대카드</span>
-        <i class="fas fa-laptop"></i>
-        <span>PC방</span>
-        <a href="./join.html">회원가입</a>
-        <a href="./login.html">로그인</a>
-      </div>
-    </header>
-    <div class="header__menu__detail">
-      <div class="header__menu__detail__main">
-        <div class="header__menu__detail__main__X">
-          <i class="fas fa-times"></i>
+    <div class="L">
+      <header>
+        <img
+          class="title"
+          src="data:image/png;base64,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"
+        />
+        <div class="barrier"></div>
+        <div class="header__login">
+          <div class="header__login__top">
+            <i class="fas fa-user-circle"></i>
+            <h1>로그인</h1>
+          </div>
+          <div class="header__login__bottom">
+            <h2>회원가입</h2>
+            <div class="mini_barrier"></div>
+            <h2>보안접속<b>ON</b></h2>
+          </div>
         </div>
-        <div class="header__menu__detail__main__games">
-          <div class="header__menu__detail__main__games__btns">
-            <div>전체게임</div>
-            <div>고객센터</div>
+        <div class="barrier"></div>
+        <div class="header__links">
+          <div class="header__link__item">
+            <i class="fas fa-users"></i>
+            <span>고객센터</span>
           </div>
-          <div class="header__menu__detail__main__games__container">
-            <div class="header__menu__detail__main__games__items__L">
-              <h2>A~Z</h2>
-              <span>FIFA 모바일</span>
-              <span>FIFA 온라인4</span>
-              <span>V4</span>
-              <span></span>
-              <h2>ㄱ~ㄹ</h2>
-              <span>고질라 디펜스 포스</span>
-              <span>그랜드 체이스 클래식</span>
-              <span>넥슨타운:NEXONTOWN</span>
-              <span>던전앤파이터</span>
-              <span>던전앤파이터 모바일</span>
-              <span>데이브 더 다이브</span>
-              <span>드래곤네스트</span>
-              <span></span>
-              <h2>ㅁ~ㅅ</h2>
-              <span>마비노기</span>
-              <span>마비노기 영웅전</span>
-              <!-- <span>메이플스토리</span>
-              <span>메이플스토리 월드</span>
-              <span></span> -->
-            </div>
-            <div class="header__menu__detail__main__games__items__R">
-              <h2>ㅇ~ㅈ</h2>
-              <span>아스가르드</span>
-              <span>아키에이지</span>
-              <span>어둠의전설</span>
-              <span>엘소드</span>
-              <span>워헤이븐</span>
-              <span>일랜시아</span>
-              <span></span>
-              <h2>ㅊ~ㅋ</h2>
-              <span>천애명월도</span>
-              <span>카운터-스트라이크 온라인</span>
-              <span>카운터사이드</span>
-              <span>카트라이더</span>
-              <span>카트라이더 러쉬플러스</span>
-              <span>카트라이더: 드리프트</span>
-              <span>커츠펠</span>
-              <span>코스노바 모바일 - 판타스틱 데이즈</span>
-              <!-- <span>크레이지 아케이드</span>
-              <span>클로저스</span> -->
-            </div>
+          <div class="header__link__item">
+            <i class="fas fa-desktop"></i>
+            <span>넷마블PC방</span>
           </div>
-          <div class="header__menu__detail__main__games__more">
-            <div class="header__menu__detail__main__games__more__container">
-              <div>
-                <i class="fas fa-user-circle"></i>
-                <span>내정보</span>
-              </div>
-              <div>
-                <i class="fas fa-calendar-check"></i>
-                <span>이벤트</span>
-              </div>
-              <div>
-                <i class="fas fa-coins"></i>
-                <span>넥슨캐시</span>
-              </div>
-              <div>
-                <i class="fas fa-lock"></i>
-                <span>보안센터</span>
-              </div>
-              <div>
-                <i class="fas fa-info-circle"></i>
-                <span>공지사항</span>
-              </div>
-              <div>
-                <i class="fas fa-plug"></i>
-                <span>넥슨플러그</span>
-              </div>
-              <div>
-                <i class="fas fa-question-circle"></i>
-                <span>고객센터</span>
-              </div>
-              <div>
-                <i class="fas fa-credit-card"></i>
-                <span>넥슨현대카드</span>
-              </div>
-              <div>
-                <i class="fas fa-play-circle"></i>
-                <span>넥슨플레이</span>
-              </div>
-            </div>
+          <div class="header__link__item">
+            <i class="fas fa-gift"></i>
+            <span>이벤트</span>
           </div>
-          <div class="header__menu__detail__main__games__all">전체서비스</div>
+          <div class="header__link__item">
+            <i class="fas fa-wifi"></i>
+            <span>채널 넷마블</span>
+          </div>
+          <div class="header__link__item">
+            <i class="fas fa-store"></i>
+            <span>넷마블 스토어</span>
+          </div>
         </div>
-      </div>
+        <div class="header__banner">
+          <img
+            src="https://sgimage.netmarble.com/web/6N/2022/11/091636/tab_pc_lnb_221109.png"
+          />
+        </div>
+      </header>
     </div>
-    <div class="banner">
-      <div class="banner__btns">
-        <div class="banner__btnItem">
-          <span class="banner__btns__gauge"></span>
-          <h2>넥슨</h2>
-          <h1>보안OTP</h1>
-        </div>
-        <div class="banner__btnItem">
-          <span class="banner__btns__gauge"></span>
-          <h2>카트라이더</h2>
-          <h1>신규 업데이트</h1>
-        </div>
-        <div class="banner__btnItem">
-          <span class="banner__btns__gauge"></span>
-          <h2>HIT</h2>
-          <h1>HIT 출시 기념 이벤트</h1>
+    <div class="R">
+      <div class="banner">
+        <div class="banner__btns">
+          <div class="banner__btnItem">
+            <span class="banner__btns__gauge"></span>
+            <h2>머지 쿵야 아일랜드</h2>
+          </div>
+          <div class="banner__btnItem">
+            <span class="banner__btns__gauge"></span>
+            <h2>샬롯의 테이블</h2>
+          </div>
+          <div class="banner__btnItem">
+            <span class="banner__btns__gauge"></span>
+            <h2>세븐나이츠 레볼루션</h2>
+          </div>
+          <div class="banner__btnItem">
+            <span class="banner__btns__gauge"></span>
+            <h2>A3: 스틸얼라이브</h2>
+          </div>
+          <div class="banner__btnItem">
+            <span class="banner__btns__gauge"></span>
+            <h2>윈조이 포커</h2>
+          </div>
         </div>
       </div>
-    </div>
 
-    <main>
-      <div class="main__top">
-        <h1>추천게임</h1>
-        <div>
-          <a href="#none">고객센터</a>
-          <a href="#none">보안센터</a>
-        </div>
-      </div>
-      <div class="main__center">
-        <div class="main__center__L">
-          <div class="main__center__item">
-            <div class="main__center__item__img__container">
-              <img
-                src="https://mod-file.dn.nexoncdn.co.kr/banner/0d08f039-1969-4da3-b3bc-27ba85e9bdd6.png"
-              />
-            </div>
-            <div class="main__center__item__info orange">
-              <div>Pick</div>
-              <h1>슈피겔만 게임</h1>
-              <span class="main__center__item__info__specialSpan">
-                <i class="fas fa-star"></i>
-                메이플스토리 월드
-              </span>
-            </div>
-          </div>
-          <div class="main__center__item">
-            <div class="main__center__item__img__container">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/22/10/FwoV20055414911.png"
-              />
-            </div>
-            <div class="main__center__item__info">
-              <div>추천</div>
-              <h1>카트라이더 러쉬플<br />러스</h1>
-              <span class="main__center__item__info__span"
-                >이벤트 진행중인</span
-              >
-            </div>
-          </div>
-          <div class="main__center__item">
-            <div class="main__center__item__img__container">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/22/11/srks10095417930.png"
-              />
-            </div>
-            <div class="main__center__item__info">
-              <div>추천</div>
-              <h1>FIFA 온라인 4</h1>
-              <span class="main__center__item__info__span"
-                >최근 게이머가 많은</span
-              >
-            </div>
-          </div>
-          <div class="main__center__item">
-            <div class="main__center__item__img__container">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/22/10/Gd3h20055444780.png"
-              />
-            </div>
+      <main>
+        <div class="main__L"></div>
+        <div class="main__R"></div>
+      </main>
 
-            <div class="main__center__item__info">
-              <div>추천</div>
-              <h1>FIFA 모바일</h1>
-              <span class="main__center__item__info__span"
-                >최근 게이머가 많은</span
-              >
+      <footer>
+        <div class="footer__top">
+          <h1>netmarble</h1>
+          <div class="footer__middle__lang">
+            <h2>Family Site</h2>
+            <div class="footer__middle__lang__more">
+              <span>America</span>
+              <span>Japen</span>
+              <span>Turkey</span>
+              <span>Thailand</span>
             </div>
-          </div>
-          <div class="main__center__item">
-            <img
-              src="https://rs.nxfs.nexon.com/home/images/temp/banner_recommend_plcc2.jpg"
-            />
           </div>
         </div>
-        <div class="main__center__R">
-          <div
-            class="main__center__R__1"
-            onclick="location.href='./login.html'"
+
+        <div class="footer__bottom">
+          <span
+            >넷마블(주) 사업자번호 : 105-87-64746 통신판매업신고번호 : 제
+            2014-서울구로-1028호 각자 대표집행임원: 권영식, 도기욱 호스팅서비스
+            사업자 : 넷마블(주)</span
           >
-            NEXON ID 로그인
-          </div>
-          <div class="main__center__R__2">
-            <div onclick="location.href='./login.html'">일회용 로그인</div>
-            <div onclick="location.href='./login.html'">QR 로그인</div>
-          </div>
-          <div class="main__center__R__3">
-            <span onclick="location.href='./login.html'"
-              >다른 계정 간편 로그인</span
-            >
-            <img src="./images/google-removebg-preview.png" />
-            <img src="./images/facebook-removebg-preview.png" />
-            <img src="./images/naver-removebg-preview.png" />
-            <img src="./images/apple-removebg-preview.png" />
-          </div>
-          <div class="main__center__R__4">
-            <a href="./login.html">넥슨 ID찾기</a>
-            <a href="./login.html">비밀번호 찾기</a>
-            <a href="./join.html">회원가입</a>
-          </div>
-          <div class="main__center__R__4__pop">
-            <div></div>
-            <span
-              >지금 넥슨 회원가입하시고 47개 넥슨게임을 무료로
-              플레이하세요</span
-            >
-            <i class="fas fa-times"></i>
-          </div>
+          <span
+            >서울특별시 구로구 디지털로26길 38, G-Tower 넷마블 |
+            PC고객센터:1588-5180 / 모바일고객센터:1588-3995 / 제2의나라
+            고객센터:1670-0359 / 블레이드&소울 레볼루션 고객센터:1670-1182 /
+            리니지2 레볼루션 고객센터:1670-8212 / Fax:02-6375-1790
+          </span>
+          <br>
+          <br>
+          <span>Copyright © Netmarble Corp. All Rights Reserved.</span>
         </div>
-      </div>
-    </main>
 
-    <article>
-      <div class="article__top">
-        <h1>전체게임</h1>
-        <span>
-          <i class="fas fa-th-large"></i>
-        </span>
-        <span>
-          <i class="fas fa-bars"></i>
-        </span>
-        <div>
-          <i class="fas fa-comment-dots"></i>
-          <h3>모바일게임 커뮤니티 모아보기</h3>
-          <i class="fas fa-share-square"></i>
-        </div>
-        <form>
-          <input placeholder="게임명 검색" />
-          <i class="fas fa-search"></i>
-        </form>
-      </div>
-      <div class="article__nav">
-        <div class="article__nav__container">
-          <div>#전체</div>
-          <div>#얼리스테이지</div>
-          <div>#WINDOWS</div>
-          <div>#ANDROID</div>
-          <div>#IOS</div>
-          <div>#RPG</div>
-          <div>#액션 RPG</div>
-          <div>#AOS/MOBA</div>
-          <div>#FPS</div>
-          <div>#캐주얼</div>
-          <div>#스포츠</div>
-          <div>#PVP</div>
-          <div>#MMOSLG</div>
-          <div>#이벤트</div>
-        </div>
-      </div>
-      <div class="article__main__1">
-        <div class="article__main__item__container" id="article__main__item1">
-          <div class="article__main__item">
-            <div class="article__main__item__imageholder">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/Ymo429175605814.png"
-              />
+        <div class="footer__middle">
+          <div class="footer__middle__a__container">
+            <div class="footer__middle__a__item">
+              <a href="#none">회사소개</a>
+              <div class="bari"></div>
+              <a href="#none">광고/제휴문의</a>
+              <div class="bari"></div>
+              <a href="#none">약관보기</a>
+              <div class="bari"></div>
+              <a href="#none">위치정보이용약관</a>
+              <div class="bari"></div>
+              <a href="#none">개인정보처리방침</a>
+              <div class="bari"></div>
+              <a href="#none">청소년보호정책</a>
+              <div class="bari"></div>
+              <a href="#none">전자우편</a>
+              <div class="bari"></div>
+              <a href="#none">사업자정보공개사이트</a>
+              <div class="bari"></div>
+              <a href="#none">사이트맵</a>
             </div>
-            <div class="article__main__item__info">
-              <h1>던전앤파이터</h1>
-              <h2>ACTION RPG</h2>
-              <div>
-                <i class="fab fa-windows"></i>
-              </div>
-            </div>
-          </div>
-          <div class="article__main__item">
-            <div class="article__main__item__imageholder">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/21/1/2FJh07105826755.jpg"
-              />
-            </div>
-            <div class="article__main__item__info">
-              <h1>메이플스토리</h1>
-              <h2>RPG</h2>
-              <div>
-                <i class="fab fa-windows"></i>
-              </div>
-            </div>
-          </div>
-          <div class="article__main__item">
-            <div class="article__main__item__imageholder">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/22/11/Nn4O10095417755.png"
-              />
-            </div>
-            <div class="article__main__item__info">
-              <h1>FIFA 온라인 4</h1>
-              <h2>스포츠</h2>
-              <div>
-                <i class="fab fa-windows"></i>
-                <i class="fab fa-android"></i>
-                <i class="fab fa-apple"></i>
-              </div>
-            </div>
-          </div>
-          <div class="article__main__item">
-            <div class="article__main__item__imageholder">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/22/3/p43H15115226010.jpg"
-              />
-            </div>
-            <div class="article__main__item__info">
-              <h1>던전앤파이터 모바일</h1>
-              <h2>ACTION RPG</h2>
-              <div>
-                <i class="fab fa-windows"></i>
-                <i class="fab fa-android"></i>
-                <i class="fab fa-apple"></i>
-              </div>
-            </div>
-          </div>
-          <div class="article__main__item">
-            <div class="article__main__item__imageholder">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/22/10/JlwF20055616668.png"
-              />
-            </div>
-            <div class="article__main__item__info">
-              <h1>메이플스토리M</h1>
-              <h2>RPG</h2>
-              <div>
-                <i class="fab fa-windows"></i>
-                <i class="fab fa-android"></i>
-                <i class="fab fa-apple"></i>
-              </div>
-            </div>
-          </div>
-          <div class="article__main__item">
-            <div class="article__main__item__imageholder">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/21/11/eovt09154057782.png"
-              />
-            </div>
-            <div class="article__main__item__info">
-              <h1>바람의나라: 연</h1>
-              <h2>RPG</h2>
-              <div>
-                <i class="fab fa-windows"></i>
-                <i class="fab fa-android"></i>
-                <i class="fab fa-apple"></i>
-              </div>
-            </div>
+            
           </div>
         </div>
-        <div class="article__main__item__container" id="article__main__item2">
-          2
-        </div>
-        <div class="article__main__item__container" id="article__main__item3">
-          3
-        </div>
-        <div class="article__main__item__container" id="article__main__item4">
-          4
-        </div>
-        <div class="article__main__item__container" id="article__main__item5">
-          5
-        </div>
-        <div class="article__main__item__container" id="article__main__item6">
-          6
-        </div>
-        <div class="article__main__item__container" id="article__main__item7">
-          7
-        </div>
-        <div class="article__main__item__container" id="article__main__item8">
-          8
-        </div>
-        <div class="article__main__item__container" id="article__main__item9">
-          9
-        </div>
-        <div class="article__main__item__container" id="article__main__item10">
-          10
-        </div>
-        <div class="article__main__item__container" id="article__main__item11">
-          11
-        </div>
-        <div class="article__main__item__container" id="article__main__item12">
-          12
-        </div>
-        <div class="article__main__item__container" id="article__main__item13">
-          13
-        </div>
-        <div class="article__main__item__container" id="article__main__item14">
-          14
-        </div>
-      </div>
-      <div class="article__main__2">
-        <div id="article__main__2_1" class="article__main__2__container__all">
-          <div class="article__main__2__container__all__RPG">
-            <h1>RPG</h1>
-            <div class="bar"></div>
-            <div class="article__main__2__container__all__RPG__games">
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-              <div class="article__main__2__container__all__RPG__games__item">
-                <img
-                  src="https://rs.nxfs.nexon.com/gameusr/21/9/baiw09100707717.jpg"
-                />
-                <span>메이플스토리</span>
-              </div>
-            </div>
-          </div>
-          <div class="article__main__2__container__all__other">
-            <div class="article__main__2__container__all__other__container">
-              <h1>액션 RPG</h1>
-              <div class="bar"></div>
-              <div
-                class="article__main__2__container__all__other__container__games"
-              >
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-                  />
-                  <span>던전앤파이터</span>
-                </div>
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-                  />
-                  <span>던전앤파이터</span>
-                </div>
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-                  />
-                  <span>던전앤파이터</span>
-                </div>
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-                  />
-                  <span>던전앤파이터</span>
-                </div>
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-                  />
-                  <span>던전앤파이터</span>
-                </div>
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-                  />
-                  <span>던전앤파이터</span>
-                </div>
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-                  />
-                  <span>던전앤파이터</span>
-                </div>
-              </div>
-            </div>
-            <div class="article__main__2__container__all__other__container">
-              <h1>AOS/MOBA</h1>
-              <div class="bar"></div>
-              <div
-                class="article__main__2__container__all__other__container__games"
-              >
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/22/7/nIBQ14093210630.png"
-                  />
-                  <span>사이퍼즈</span>
-                </div>
-              </div>
-            </div>
-            <div class="article__main__2__container__all__other__container">
-              <h1>FPS</h1>
-              <div class="bar"></div>
-              <div
-                class="article__main__2__container__all__other__container__games"
-              >
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-                  />
-                  <span>서든어택</span>
-                </div>
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/19/3/PF9Z25141624118.png"
-                  />
-                  <span>카운터-스트라이크 온라인</span>
-                </div>
-                <div
-                  class="article__main__2__container__all__other__container__games__item"
-                >
-                  <img
-                    src="https://rs.nxfs.nexon.com/gameusr/22/5/7SGd26155853242.png"
-                  />
-                  <span>베일드 엑스퍼트</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="article__main__2_2" class="article__main__2__container">
-          <div class="article__main__2__container__games">
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-            <div class="article__main__2__container__games__item">
-              <img
-                src="https://rs.nxfs.nexon.com/gameusr/19/7/42tf29175605915.png"
-              />
-              <span>서든어택</span>
-            </div>
-          </div>
-        </div>
-        <div id="article__main__2_3" class="article__main__2__container">3</div>
-        <div id="article__main__2_4" class="article__main__2__container">4</div>
-        <div id="article__main__2_5" class="article__main__2__container">5</div>
-        <div id="article__main__2_6" class="article__main__2__container">6</div>
-        <div id="article__main__2_7" class="article__main__2__container">7</div>
-        <div id="article__main__2_8" class="article__main__2__container">8</div>
-        <div id="article__main__2_9" class="article__main__2__container">9</div>
-        <div id="article__main__2_10" class="article__main__2__container">
-          10
-        </div>
-        <div id="article__main__2_11" class="article__main__2__container">
-          11
-        </div>
-        <div id="article__main__2_12" class="article__main__2__container">
-          12
-        </div>
-        <div id="article__main__2_13" class="article__main__2__container">
-          13
-        </div>
-        <div id="article__main__2_14" class="article__main__2__container">
-          14
-        </div>
-      </div>
-    </article>
-
-    <footer>
-      <div class="footer__top">
-        <h1>[공지] 12월 넥슨플레이 바코드캐시충전 이벤트</h1>
-        <div>
-          <i class="fab fa-youtube"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-        </div>
-      </div>
-      <div class="footer__middle">
-        <div class="footer__middle__a__container">
-          <div class="footer__middle__a__item">
-            <a href="#none">이용약관</a>
-            <div class="bari"></div>
-            <a href="#none">개인정보처리방침</a>
-            <div class="bari"></div>
-            <a href="#none">청소년보호정책</a>
-            <div class="bari"></div>
-            <a href="#none">게임IP사용가이드</a>
-            <div class="bari"></div>
-            <a href="#none">게임시간선택제</a>
-            <div class="bari"></div>
-            <a href="#none">고객센터</a>
-            <div class="bari"></div>
-            <a href="#none">전체서비스</a>
-          </div>
-          <div class="footer__middle__a__item">
-            <a href="#none">회사소개</a>
-            <div class="bari"></div>
-            <a href="#none">채용안내</a>
-            <div class="bari"></div>
-            <a href="#none">윤리경영</a>
-            <div class="bari"></div>
-            <a href="#none">LEVEL UP(넥슨폰트)</a>
-            <div class="bari"></div>
-            <a href="#none">광고문의</a>
-            <div class="bari"></div>
-            <a href="#none">넥슨PC방</a>
-          </div>
-        </div>
-        <div class="footer__middle__lang">
-          <h2>Korean</h2>
-          <i class="fas fa-globe"></i>
-          <div class="footer__middle__lang__more">
-            <span>Global-Engilsh</span>
-            <span>Thai</span>
-            <span>Traditional Chinese</span>
-            <span>Korean</span>
-            <span>Japanese</span>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span
-          >(주)넥슨코리아 대표이사 이정헌 경기도 성남시 분당구 판교로 256번길 7
-          전화 : 1588-7701 팩스 : 0502-258-8322</span
-        >
-        <span
-          ><br />E-mail : contact-us@nexon.co.kr 사업자등록번호 : 220-87-17483호
-          통신판매업 신고번호 : 제2013-경기성남-1659호<a href="#none"
-            >사업자정보확인</a
-          ></span
-        >
-        <span><br />&copy NEXON Korea Corporation All Rights Reserved.</span>
-      </div>
-      <img src="./images/nCi_ci_black.gif" />
-    </footer>
+      </footer>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script/custom.js"></script>

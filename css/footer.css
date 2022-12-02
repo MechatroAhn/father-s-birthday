@@ -3,33 +3,23 @@ footer {
   height: 350px;
   background-color: rgb(35, 36, 38);
   color: white;
-  min-width: 1280px;
+  min-width: 1360px;
 }
+
 .footer__top {
   width: 100%;
   height: 80px;
-  border-bottom: 1px solid rgb(75, 75, 75);
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.footer__top h1 {
-  margin-left: 50px;
-  font-size: 15px;
-}
-.footer__top div {
-  margin-right: 50px;
+  margin-bottom: 30px;
 }
 
-.footer__top i {
-  margin-right: 10px;
-  transition: 0.3s;
-  font-size: 18px;
-  cursor: pointer;
-}
-.footer__top i:hover {
-  color: rgb(3, 118, 251);
+.footer__top h1 {
+  margin-left: 50px;
+  font-size: 30px;
+  margin-top: 45px;
 }
 
 .footer__middle {
@@ -41,7 +31,7 @@ footer {
 .footer__middle__a__container {
   margin-left: 50px;
   height: 90px;
-  width: 800px;
+  width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -49,7 +39,7 @@ footer {
 .footer__middle__a__container a {
   color: rgb(172, 172, 172);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
 }
 .footer__middle__a__item {
   display: flex;
@@ -64,8 +54,6 @@ footer {
 
 .footer__middle__lang {
   position: relative;
-  margin-top: 10px;
-  margin-right: 50px;
   width: 150px;
   height: 40px;
   background-color: rgb(57, 58, 60);
@@ -75,6 +63,8 @@ footer {
   color: rgb(215, 215, 215);
   cursor: pointer;
   font-size: 13px;
+  margin-top: 50px;
+  margin-right: 50px;
 }
 
 .footer__middle__lang h2 {
@@ -83,19 +73,14 @@ footer {
   display: block;
   width: 180px;
 }
-.footer__middle__lang h2:hover,
-.footer__middle__lang h2:hover i {
-  color: rgb(3, 118, 251);
-}
+
 .footer__middle__lang i {
   margin-right: 15px;
   margin-top: 5px;
   transition: 0.3s;
   font-size: 15px;
 }
-.footer__middle__lang__more span:hover {
-  color: rgb(3, 118, 251);
-}
+
 .footer__middle__lang__more {
   position: absolute;
   width: 100%;
@@ -113,11 +98,15 @@ footer {
   transition: 0.3s;
 }
 .footer__bottom {
-  width: 800px;
+  width: 1360px;
   font-size: 12px;
   margin-left: 50px;
   line-height: 20px;
   color: rgb(120, 120, 120);
+}
+.footer__bottom span:nth-child(5) {
+  font-weight: bold;
+  color: rgb(159, 159, 159);
 }
 .footer__bottom a {
   color: rgb(120, 120, 120);

@@ -142,19 +142,19 @@ header .title {
 }
 .banner {
   width: 100%;
-  height: 500px;
+  height: 410px;
   border: 0.1px solid white;
   position: relative;
   transition: 1s;
+  background-size:cover;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center;
 }
 .banner__btns {
-  width: 100%;
+  width: 1360px;
   height: 60px;
   margin: 0 auto;
-  margin-top: 440px;
+  margin-top: 350px;
   display: flex;
   align-items: center;
   justify-content: space-between;

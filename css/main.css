@@ -1,7 +1,33 @@
 main {
   width: 1360px;
-  background-color: antiquewhite;
-  height: 500px;
   padding-top: 70px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__L {
+  width: 880px;
+}
+.main__L__container{
+  width:100%;
+  height: 650px;
+  background-color: aqua;
+}
+.main__L h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.main__R {
+  width: 368px;
+}
+.main__R h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.main__R__container{
+  width:100%;
+  height: 650px;
+  background-color: blueviolet;
 }

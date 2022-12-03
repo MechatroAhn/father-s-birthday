@@ -439,3 +439,132 @@ $(".footer__middle__lang").click(function () {
 $(".main__center__R__4__pop > i").click(function () {
   $(".main__center__R__4__pop").css({ display: "none" });
 });
+
+$(".main__L__container > .main__L__container__item:nth-child(1)").mouseover(
+  function () {
+    $(".main__L__container__item:nth-child(1) > .hover__container").css({
+      transform: "translateY(-20px)",
+      boxShadow: "0 240px 30px 20px rgba(0,0,0,0.3)",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(1)").mouseleave(
+  function () {
+    $(".main__L__container__item:nth-child(1) > .hover__container").css({
+      transform: "translateY(0px)",
+      boxShadow: "none",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(2)").mouseover(
+  function () {
+    $(".main__L__container__item:nth-child(2) > .hover__container").css({
+      transform: "translateY(-20px)",
+      boxShadow: "0 240px 30px 20px rgba(0,0,0,0.3)",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(2)").mouseleave(
+  function () {
+    $(".main__L__container__item:nth-child(2) > .hover__container").css({
+      transform: "translateY(0px)",
+      boxShadow: "none",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(3)").mouseover(
+  function () {
+    $(".main__L__container__item:nth-child(3) > .hover__container").css({
+      transform: "translateY(-20px)",
+      boxShadow: "0 240px 30px 20px rgba(0,0,0,0.3)",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(3)").mouseleave(
+  function () {
+    $(".main__L__container__item:nth-child(3) > .hover__container").css({
+      transform: "translateY(0px)",
+      boxShadow: "none",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(4)").mouseover(
+  function () {
+    $(".main__L__container__item:nth-child(4) > .hover__container").css({
+      transform: "translateY(-20px)",
+      boxShadow: "0 240px 30px 20px rgba(0,0,0,0.3)",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(4)").mouseleave(
+  function () {
+    $(".main__L__container__item:nth-child(4) > .hover__container").css({
+      transform: "translateY(0px)",
+      boxShadow: "none",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(5)").mouseover(
+  function () {
+    $(".main__L__container__item:nth-child(5) > .hover__container").css({
+      transform: "translateY(-20px)",
+      boxShadow: "0 240px 30px 20px rgba(0,0,0,0.3)",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(5)").mouseleave(
+  function () {
+    $(".main__L__container__item:nth-child(5) > .hover__container").css({
+      transform: "translateY(0px)",
+      boxShadow: "none",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(6)").mouseover(
+  function () {
+    $(".main__L__container__item:nth-child(6) > .hover__container").css({
+      transform: "translateY(-20px)",
+      boxShadow: "0 240px 30px 20px rgba(0,0,0,0.3)",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(6)").mouseleave(
+  function () {
+    $(".main__L__container__item:nth-child(6) > .hover__container").css({
+      transform: "translateY(0px)",
+      boxShadow: "none",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(7)").mouseover(
+  function () {
+    $(".main__L__container__item:nth-child(7) > .hover__container").css({
+      transform: "translateY(-20px)",
+      boxShadow: "0 240px 30px 20px rgba(0,0,0,0.3)",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(7)").mouseleave(
+  function () {
+    $(".main__L__container__item:nth-child(7) > .hover__container").css({
+      transform: "translateY(0px)",
+      boxShadow: "none",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(8)").mouseover(
+  function () {
+    $(".main__L__container__item:nth-child(8) > .hover__container").css({
+      transform: "translateY(-20px)",
+      boxShadow: "0 240px 30px 20px rgba(0,0,0,0.3)",
+    });
+  }
+);
+$(".main__L__container > .main__L__container__item:nth-child(8)").mouseleave(
+  function () {
+    $(".main__L__container__item:nth-child(8) > .hover__container").css({
+      transform: "translateY(0px)",
+      boxShadow: "none",
+    });
+  }
+);

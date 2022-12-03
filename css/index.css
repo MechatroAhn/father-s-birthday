@@ -50,6 +50,7 @@ header .title {
   margin-top: 80px;
   margin-left: 15px;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 .header__login {
   width: 100%;
@@ -146,7 +147,7 @@ header .title {
   border: 0.1px solid white;
   position: relative;
   transition: 1s;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }

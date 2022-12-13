@@ -1,200 +1,21 @@
 @import "./reset.css";
+@import "./header.css";
+@import "./nav.css";
 @import "./main.css";
-@import "./article.css";
-@import "./footer.css";
 
 body {
-  font-family: "NanumGothic";
-  display: flex;
   width: 100%;
-  height: 100%;
-  color: black;
-  background-color: white;
-  position: relative;
-}
-
-.L {
-  min-width: 250px;
-  max-width: 250px;
-  z-index: 2;
-  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.162);
-}
-
-.R {
-  width: 100%;
-  height: 100%;
-  min-width: 1360px;
-  z-index: 1;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-
-header {
-  left: 0;
-  width: 226px;
   height: 100vh;
-  position: fixed;
-  border-top: 0.1px solid white;
   display: flex;
-  flex-direction: column;
-  max-width: 250px;
-  padding-left: 20px;
-  overflow: hidden;
-  z-index: 2;
-  background-color: white;
-}
-header .title {
-  width: 180px;
-  margin-top: 80px;
-  margin-left: 15px;
-  margin-bottom: 60px;
-  cursor: pointer;
-}
-.header__login {
-  width: 100%;
-  height: 80px;
-  padding: 15px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.header__login__top {
-  display: flex;
-  align-items: center;
-  margin-left: 25px;
-}
-.header__login__top i {
-  color: #f9d85e;
-  font-size: 25px;
-  margin-right: 17px;
-}
-.header__login__top h1 {
-  font-size: 15px;
-  cursor: pointer;
-}
-.header__login__bottom {
-  margin-left: 25px;
-  display: flex;
-  align-items: center;
-}
-.header__login__bottom h2 {
-  font-size: 13px;
-  cursor: pointer;
-}
-.header__links {
-  width: 150px;
-  height: 200px;
-  padding-left: 15px;
-  margin-top: 50px;
-}
-.header__link__item {
-  margin-left: 10px;
-  margin-bottom: 18px;
-  transition: transform 0.5s;
-  cursor: pointer;
-}
-.header__link__item:hover {
-  transform: translateX(10px);
-}
-.header__link__item:hover i {
-  color: #f9d85e;
-}
-.header__link__item:hover span {
-  color: black;
-}
-.header__link__item i {
-  color: rgb(206, 206, 206);
-  font-size: 20px;
-  margin-right: 10px;
-}
-.header__link__item span {
-  color: rgb(98, 98, 98);
-  font-size: 15px;
-  font-weight: bold;
-}
-.header__banner {
-  width: 92.5%;
-  height: 25%;
-  margin-top: 110px;
   position: relative;
-  cursor: pointer;
-  transition: 0.5s;
 }
-.header__banner img {
-  width: 100%;
+.L {
   height: 100%;
-}
-.header__banner:hover {
-  transform: translateX(10px);
-}
-.barrier {
-  width: 70%;
-  height: 1px;
-  background-color: rgb(206, 206, 206);
-  margin-left: 15px;
-}
-.mini_barrier {
-  width: 1;
-  height: 80%;
-  background-color: rgb(206, 206, 206);
-  margin: 0 10px;
-}
-.banner {
-  width: 100%;
-  height: 410px;
-  border: 0.1px solid white;
+  width: 200px;
   position: relative;
-  transition: 1s;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
-.banner__btns {
-  width: 1360px;
-  height: 60px;
-  margin: 0 auto;
-  margin-top: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.banner__btnItem {
-  width: 20%;
+.R {
+  width: calc(100% - 200px);
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: background-color 0.5s;
-}
-.banner__btnItem h2 {
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-  margin-top: 22px;
-  color: rgb(206, 206, 206);
-}
-
-.banner__btns__gauge {
-  display: block;
-  width: 100%;
-  background-color: rgba(213, 213, 213, 0.33);
-  height: 100%;
-  position: absolute;
-  left: calc(-100%);
-}
-
-.move {
-  animation: bannerGauge 5s linear;
-}
-
-@keyframes bannerGauge {
-  from {
-    left: calc(-100%);
-  }
-  to {
-    left: 0px;
-  }
+  min-width: 1300px;
 }

@@ -78,6 +78,7 @@ $(".main__item__info__bottom > h2").mouseleave(function (event) {
 });
 
 let j = 6;
+let k = 0;
 
 $(".nav__more").click(function () {
   $(".nav__more").css({ display: "none" });
@@ -96,5 +97,67 @@ $(".nav__more").click(function () {
     test.append(img, span);
     test.classList.add("nav__item");
     $(".nav__sub").append(test);
+  }
+});
+
+let filter = 0;
+
+$(".filter__btn").click(function () {
+  if (filter == 0) {
+    $(".filter__container").slideDown();
+    $(".filter__container").css({ display: "flex" });
+    filter = 1;
+  } else if (filter != 0) {
+    $(".filter__container").slideUp();
+    filter = 0;
+  }
+});
+
+$(".article__more__btn").click(function () {
+  $(".article__more__btn").css({ display: "none" });
+
+  for (k = 0; k < 3; k++) {
+    const div = document.createElement("div");
+
+    div.classList.add("article__item");
+    const img2 = document.createElement("img");
+    img2.src =
+      "https://i.ytimg.com/an_webp/dYwopUKybyc/mqdefault_6s.webp?du=3000&sqp=CKnZ5ZwG&rs=AOn4CLC3hcnYEQ4Pg_hSl3NcNJssdiouEA";
+
+    const div2 = document.createElement("div");
+    div2.classList.add("article__item__info");
+    const h1 = document.createElement("h1");
+    h1.innerText = "맛있다고 소문난 수육 레시피 다 해봤습니다!";
+    const div3 = document.createElement("div");
+    div3.classList.add("article__item__info__detail");
+    const span1 = document.createElement("span");
+    const span2 = document.createElement("span");
+    const span3 = document.createElement("span");
+    span1.innerText = "조회수 115만회";
+    span2.innerText = "·";
+    span3.innerText = "2주 전";
+    div3.append(span1, span2, span3);
+
+    const div4 = document.createElement("div");
+    div4.classList.add("article__item__info__user");
+    const img3 = document.createElement("img");
+    img3.src =
+      "https://yt3.ggpht.com/ytc/AMLnZu8O8y0NFhx5hcsE-Zdwg2ouE5QPXjLrI9bL5hV_=s68-c-k-c0x00ffffff-no-rj";
+    const h2 = document.createElement("h2");
+    h2.innerText = "육식맨 YOOXICMAN";
+    div4.append(img3, h2);
+
+    const p = document.createElement("p");
+    p.innerText =
+      "[육식맨 YOOXICMAN 채널 소개]고기 없이 못 사는 육식주의자를 위한";
+    const div5 = document.createElement("div");
+    div5.classList.add("article__item__info__type");
+    div5.innerText = "4K";
+    div2.append(h1, div3, div4, p, div5);
+
+    div.append(img2, div2);
+
+    const article = document.getElementById("article_test");
+    article.append(div);
   }
 });

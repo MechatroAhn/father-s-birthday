@@ -2,6 +2,7 @@
 @import "./header.css";
 @import "./nav.css";
 @import "./main.css";
+@import "./article.css";
 
 body {
   width: 100%;
@@ -17,5 +18,5 @@ body {
 .R {
   width: calc(100% - 200px);
   height: 100%;
-  min-width: 1300px;
+  min-width: 1700px;
 }

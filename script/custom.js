@@ -121,8 +121,7 @@ $(".article__more__btn").click(function () {
 
     div.classList.add("article__item");
     const img2 = document.createElement("img");
-    img2.src =
-      "https://i.ytimg.com/an_webp/dYwopUKybyc/mqdefault_6s.webp?du=3000&sqp=CKnZ5ZwG&rs=AOn4CLC3hcnYEQ4Pg_hSl3NcNJssdiouEA";
+    img2.src = "./images/sample.png";
 
     const div2 = document.createElement("div");
     div2.classList.add("article__item__info");

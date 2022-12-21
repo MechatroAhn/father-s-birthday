@@ -1,4 +1,5 @@
 let btn = 0;
+
 $(".nav__btn").click(function () {
   if (btn == 0) {
     $(".nav__detail").slideDown();
@@ -16,8 +17,8 @@ $(function () {
   });
 });
 
+
 $(".main__nav > span").click(function (event) {
-  console.log(event.target.value);
   if (event.target.innerText == "가족") {
     for (let i = 1; i <= 4; i++) {
       if (i == 1) {

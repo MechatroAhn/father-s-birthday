@@ -215,7 +215,7 @@ article h1{
   width:2200px;
   margin: 0 auto;
   z-index: 5;
-  height: 100vh;
+  height: 300vh;
   background-color: #f7e640;
   font-weight: bold;
   font-size: 55px;
@@ -225,6 +225,7 @@ article h1{
   text-align: center;
   padding-top: 100px;
 }
+
 
 @media screen and (min-width: 503px) {
   .error{

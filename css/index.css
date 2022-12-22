@@ -211,7 +211,26 @@ article h1{
   margin-bottom: 30px;
 }
 
+.error{
+  width:2200px;
+  margin: 0 auto;
+  z-index: 5;
+  height: 100vh;
+  background-color: #f7e640;
+  font-weight: bold;
+  font-size: 55px;
+  position: absolute;
+  top:0;
+  display: none;
+  text-align: center;
+  padding-top: 100px;
+}
 
+@media screen and (min-width: 503px) {
+  .error{
+    display: block;
+  }
+}
 
 @keyframes moveBtn {
   from {

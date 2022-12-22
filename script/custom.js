@@ -12,11 +12,9 @@ $(".nav__btn").click(function () {
 
 $(function () {
   $(".nav__detail > a").click(function (event) {
-    event.preventDefalut();
     $("html, body").animate({ scrollTop: $(this.hash).offset.top }, 600);
   });
 });
-
 
 $(".main__nav > span").click(function (event) {
   if (event.target.innerText == "가족") {

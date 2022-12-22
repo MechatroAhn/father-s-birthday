@@ -23,6 +23,7 @@ header {
   align-items: center;
   letter-spacing: 3px;
   display: none;
+  z-index: 3;
 }
 nav {
   position: fixed;
@@ -99,11 +100,21 @@ main {
 .main__message__container {
   width: 100%;
   height: 660px;
-  background-color: rgb(121, 231, 25);
+  background-color: #96b3d1;
   position: absolute;
   display: none;
   margin-top: 10px;
+  padding-top:15px;
+  padding-left: 10px;
   z-index: 0;
+}
+.message__img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 10px;
 }
 .main__nav span:nth-child(1) {
   text-decoration: underline;
@@ -111,10 +122,53 @@ main {
 #message1 {
   display: block;
 }
-
+.main__message{
+  width: 90%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.main__message img{
+  width:45px;
+  height: 45px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.message__text{
+  width:75%;
+  height: 80%;
+  margin-left: 30px;
+  background-color: #f7e640;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.message__img h1{
+  margin-left: 7px;
+}
+.tri{
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f7e640;
+  margin-top: 28px;
+  margin-left: -8px;
+  border-radius: 5px;
+}
+.message__text span{
+  display: flex;
+  align-items: center;
+  width:70%;
+  height: 70%;
+  margin-left: 20px;
+}
 article {
   width: 100%;
-  height: 700px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,6 +179,11 @@ article img {
   width: 320px;
   border: 2px solid rgba(0, 0, 0, 0.213);
   border-radius: 20px;
+}
+article h1{
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 25px;
 }
 .article__info {
   display: flex;
@@ -151,6 +210,8 @@ article img {
   width: 350px;
   margin-bottom: 30px;
 }
+
+
 
 @keyframes moveBtn {
   from {

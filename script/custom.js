@@ -26,7 +26,7 @@ $(".main__nav > span").click(function (event) {
         $(`.main__nav > span:nth-child(${i})`).css({
           textDecoration: "underline",
         });
-        $("main").css({ height: "1000px" });
+        $("main").css({ height: "900px" });
       } else if (i != 1) {
         $(`#message${i}`).css({ display: "none" });
         $(`.main__nav > span:nth-child(${i})`).css({ textDecoration: "none" });

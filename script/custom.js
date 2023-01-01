@@ -18,7 +18,7 @@ $(function () {
 
 $(".main__nav > span").click(function (event) {
   if (event.target.innerText == "아들즈") {
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 2; i++) {
       if (i == 1) {
         $(`#message${i}`).css({
           display: "block",
@@ -33,27 +33,14 @@ $(".main__nav > span").click(function (event) {
       }
     }
   }  else if (event.target.innerText == "아들 친구들") {
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 2; i++) {
       if (i == 2) {
         $(`#message${i}`).css({ display: "block" });
         $(`.main__nav > span:nth-child(${i})`).css({
           textDecoration: "underline",
         });
-        $("main").css({ height: "2700px" });
+        $("main").css({ height: "2900px" });
       } else if (i != 2) {
-        $(`#message${i}`).css({ display: "none" });
-        $(`.main__nav > span:nth-child(${i})`).css({ textDecoration: "none" });
-      }
-    }
-  } else if (event.target.innerText == "예비 며느리") {
-    for (let i = 1; i <= 3; i++) {
-      if (i == 3) {
-        $(`#message${i}`).css({ display: "block" });
-        $(`.main__nav > span:nth-child(${i})`).css({
-          textDecoration: "underline",
-        });
-        $("main").css({ height: "500px" });
-      } else if (i != 3) {
         $(`#message${i}`).css({ display: "none" });
         $(`.main__nav > span:nth-child(${i})`).css({ textDecoration: "none" });
       }

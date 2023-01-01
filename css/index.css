@@ -285,17 +285,14 @@ article h1 {
   }
 }
 
-#message2 .main__message:nth-child(4) {
-  margin-top: 70px;
-}
-
 #message2 .main__message:nth-child(5) {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 #message2 .main__message:nth-child(6) {
   margin-top: 100px;
 }
+
 #message2 .main__message:nth-child(7) {
   margin-top: 100px;
 }
@@ -303,25 +300,33 @@ article h1 {
   margin-top: 100px;
 }
 #message2 .main__message:nth-child(9) {
-  margin-top: 80px;
+  margin-top: 100px;
 }
-#message2 .main__message:nth-child(11) {
+#message2 .main__message:nth-child(10) {
   margin-top: 80px;
 }
 #message2 .main__message:nth-child(12) {
   margin-top: 80px;
 }
-#message2 .main__message:nth-child(15) {
+#message2 .main__message:nth-child(13) {
+  margin-top: 80px;
+}
+#message2 .main__message:nth-child(16) {
   margin-top: 80px;
   margin-bottom: 80px;
 }
-#message2 .main__message:nth-child(24) {
+#message2 .main__message:nth-child(25) {
   margin-top: 80px;
   margin-bottom: 80px;
 }
 
+#message2 .main__message:nth-child(1){
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
 #message2 {
-  height: 2700px;
+  height: 2900px;
 }
 
 #message3 .main__message {
